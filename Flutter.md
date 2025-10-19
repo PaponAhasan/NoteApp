@@ -1,6 +1,7 @@
 
 ```kotlin
-package com.rakibulahasan.test_notes_app
+implementation("androidx.datastore:datastore-preferences:1.1.7")
+implementation("com.google.code.gson:gson:2.12.0")
 
 import android.content.Context
 import android.os.Bundle
