@@ -30,7 +30,7 @@
 </LinearLayout>
 ```
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -53,7 +53,7 @@
 </LinearLayout>
 ```
 
-```
+```kotlin
 data class Note(
     val text: String,
     val isDone: Boolean = false
@@ -97,7 +97,7 @@ class NoteAdapter(
 }
 ```
 
-```
+```kotlin
 val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "notes")
 private val NOTES_KEY = stringPreferencesKey("notes")
 
@@ -121,7 +121,7 @@ fun loadNotes(context: Context): Flow<List<Note>> {
 }
 ```
 
-```
+```kotlin
 class MainActivity : AppCompatActivity() {
 
     private lateinit var adapter: NoteAdapter
